@@ -1,17 +1,16 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope } from "react-icons/fa6";
-
 export default function HomePage() {
+  const profileImage = "/profile.jpg";
 
   const socials = [
-    { name: "GitHub", href: "https://github.com/ReshMadeIt", icon: <FaGithub className="text-lg" /> },
-    { name: "LinkedIn", href: "https://www.linkedin.com/in/reshley-atsiaya", icon: <FaLinkedin className="text-lg" /> },
-    { name: "X", href: "https://x.com/lil_mpesa", icon: <FaXTwitter className="text-lg" /> },
-    { name: "Email", href: "mailto:reshmadeit@gmail.com", icon: <FaEnvelope className="text-lg" /> },
+    { name: "GitHub", href: "https://github.com/ReshMadeIt", img: "/icons/github.png" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/reshley-atsiaya", img: "/icons/linkedin.png" },
+    { name: "X", href: "https://x.com/lil_mpesa", img: "/icons/x.png" },
+    { name: "Email", href: "mailto:reshmadeit@gmail.com", img: "/icons/email.png" },
   ];
 
-    return (
+  return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.15),transparent_30%)]" />
 
@@ -20,7 +19,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-2xl" />
             <img
-              src="/public/profile.jpg"
+              src={profileImage}
               alt="ReshMadeIt"
               className="relative w-80 h-80 md:w-96 md:h-96 rounded-[2rem] object-cover border border-white/10 shadow-2xl"
             />
@@ -41,21 +40,18 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            {socials.map((social, idx) => {
-              const Icon = social.icon;
-              return (
-                <a
-                  key={idx}
-                  href={social.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition-all duration-300"
-                >
-                  <Icon className="text-lg" />
-                  <span>{social.name}</span>
-                </a>
-              );
-            })}
+            {socials.map((social, idx) => (
+              <a
+                key={idx}
+                href={social.href}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition-all duration-300"
+              >
+                <img src={social.img} alt={social.name} className="w-6 h-6" />
+                <span>{social.name}</span>
+              </a>
+            ))}
           </div>
 
           <div className="pt-4">
