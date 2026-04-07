@@ -20,7 +20,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-2xl" />
             <img
-              src={profileBase64}
+              src="/public/profile.jpg"
               alt="ReshMadeIt"
               className="relative w-80 h-80 md:w-96 md:h-96 rounded-[2rem] object-cover border border-white/10 shadow-2xl"
             />
