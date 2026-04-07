@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Reshley Atsiaya",
-  description: "My portfolio website",
+  title: "ReshMadeIt | Android Developer",
+  description: "Android developer building modern Compose apps.",
 };
 
 export default function RootLayout({ children }) {
