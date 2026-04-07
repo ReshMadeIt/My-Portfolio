@@ -6,15 +6,12 @@ export const metadata = {
   description: 'Android developer building modern Compose apps.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-slate-950 text-white font-sans">
         {children}
+        <ProjectsSection />
       </body>
     </html>
   );

@@ -1,15 +1,9 @@
 "use client";
 
-type Social = {
-  name: string;
-  href: string;
-  img: string;
-};
-
 export default function HomePage() {
-  const profileImage: string = "/profile.jpg";
+  const profileImage = "/profile.jpg";
 
-  const socials: Social[] = [
+  const socials = [
     { name: "GitHub", href: "https://github.com/ReshMadeIt", img: "/icons/github.png" },
     { name: "LinkedIn", href: "https://www.linkedin.com/in/reshley-atsiaya", img: "/icons/linkedin.png" },
     { name: "X", href: "https://x.com/lil_mpesa", img: "/icons/x.png" },
