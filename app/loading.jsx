@@ -1,6 +1,5 @@
 export default function Loading({ params }) {
-  const { slug } = params;
-
+    
   return (
     <main className="max-w-4xl mx-auto py-20 px-6">
       <p className="mt-6 text-white/70">
