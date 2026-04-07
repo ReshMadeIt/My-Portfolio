@@ -56,7 +56,7 @@ export default function HomePage() {
 
           <div className="pt-4">
             <a
-              href="#projects"
+              href="/projects"
               className="inline-flex px-6 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition-transform"
             >
               View My Work
