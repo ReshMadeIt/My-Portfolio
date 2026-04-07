@@ -11,7 +11,7 @@ export default function HomePage() {
     { name: "Email", href: "mailto:reshmadeit@gmail.com", icon: <FaEnvelope className="text-lg" /> },
   ];
 
-  return (
+   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.15),transparent_30%)]" />
 
@@ -43,11 +43,11 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            {socials.map((social) => {
+            {socials.map((social, idx) => {
               const Icon = social.icon;
               return (
                 <a
-                  key={social.name}
+                  key={idx}
                   href={social.href}
                   target="_blank"
                   rel="noreferrer"
