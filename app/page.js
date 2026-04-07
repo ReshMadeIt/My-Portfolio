@@ -21,7 +21,7 @@ export default function HomePage() {
             <img
               src={profileImage}
               alt="ReshMadeIt"
-              className="relative w-80 h-80 md:w-96 md:h-96 rounded-[2rem] object-cover border border-white/10 shadow-2xl"
+              className="relative w-[150px] h-[150px] rounded-[24px] object-cover border border-white/10 shadow-2xl"
             />
           </div>
         </div>
