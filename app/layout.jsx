@@ -1,4 +1,7 @@
 import './ui/global.css';
+import Navbar from "./components/Navbar";
+//import Footer from "./components/Footer";
+
 import { ProjectsSection } from './components/ProjectsSection';
 
 export const metadata = {
