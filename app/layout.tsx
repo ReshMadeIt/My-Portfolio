@@ -1,4 +1,5 @@
-import '@/app/ui/global.css';
+import './ui/global.css';
+import { ProjectsSection } from './components/ProjectsSection';
 
 export const metadata = {
   title: 'ReshMadeIt | Android Developer',
