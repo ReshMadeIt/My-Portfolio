@@ -11,7 +11,7 @@ export default function HomePage() {
     { name: "Email", href: "mailto:reshmadeit@gmail.com", icon: <FaEnvelope className="text-lg" /> },
   ];
 
-   return (
+    return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.15),transparent_30%)]" />
 
@@ -20,7 +20,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-2xl" />
             <img
-              src="/profile.jpg"
+              src={profileBase64}
               alt="ReshMadeIt"
               className="relative w-80 h-80 md:w-96 md:h-96 rounded-[2rem] object-cover border border-white/10 shadow-2xl"
             />
@@ -36,9 +36,7 @@ export default function HomePage() {
               Building modern mobile experiences that feel alive.
             </h1>
             <p className="text-lg md:text-xl text-white/70 leading-8 max-w-2xl">
-              I design and engineer polished Android applications with clean
-              architecture, premium UI, and real-world impact — from portfolio
-              experiences to innovative commuter platforms like Nganya.
+              I design and engineer polished Android applications with clean architecture, premium UI, and real-world impact — from portfolio experiences to innovative commuter platforms like Nganya.
             </p>
           </div>
 
