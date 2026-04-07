@@ -1,9 +1,15 @@
 "use client";
 
-export default function HomePage() {
-  const profileImage = "/profile.jpg";
+type Social = {
+  name: string;
+  href: string;
+  img: string;
+};
 
-  const socials = [
+export default function HomePage() {
+  const profileImage: string = "/profile.jpg";
+
+  const socials: Social[] = [
     { name: "GitHub", href: "https://github.com/ReshMadeIt", img: "/icons/github.png" },
     { name: "LinkedIn", href: "https://www.linkedin.com/in/reshley-atsiaya", img: "/icons/linkedin.png" },
     { name: "X", href: "https://x.com/lil_mpesa", img: "/icons/x.png" },
@@ -48,7 +54,7 @@ export default function HomePage() {
                 rel="noreferrer"
                 className="group flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition-all duration-300"
               >
-                <img src={social.img} alt={social.name} className="w-6 h-6" />
+                <img src={social.img} alt={social.name} className="w-[150px] h-[150px] rounded-[24px]" />
                 <span>{social.name}</span>
               </a>
             ))}
