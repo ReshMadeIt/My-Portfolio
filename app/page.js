@@ -1,12 +1,14 @@
+"use client";
+
 import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope } from "react-icons/fa6";
 
 export default function HomePage() {
 
   const socials = [
-    { name: "GitHub", href: "https://github.com/ReshMadeIt" },
-    { name: "LinkedIn", href: "https//www.linkedin.com/in/reshley-atsiaya" },
-    { name: "X", href: "https://x.com/lil_mpesa" },
-    { name: "Email", href: "mailto:reshmadeit@gmail.com" },
+    { name: "GitHub", href: "https://github.com/ReshMadeIt", icon: <FaGithub className="text-lg" /> },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/reshley-atsiaya", icon: <FaLinkedin className="text-lg" /> },
+    { name: "X", href: "https://x.com/lil_mpesa", icon: <FaXTwitter className="text-lg" /> },
+    { name: "Email", href: "mailto:reshmadeit@gmail.com", icon: <FaEnvelope className="text-lg" /> },
   ];
 
   return (
