@@ -15,16 +15,20 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.15),transparent_30%)]" />
 
       <section className="relative max-w-6xl mx-auto min-h-screen px-6 py-16 grid lg:grid-cols-2 gap-16 items-center">
-        <div className="flex justify-center lg:justify-end">
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-2xl" />
-            <img
-              src={profileImage}
-              alt="ReshMadeIt"
-              className="relative w-[150px] h-[150px] rounded-[24px] object-cover border border-white/10 shadow-2xl"
-            />
-          </div>
-        </div>
+        
+
+        <div style={{ width: "200", height: 200, overflow: "hidden" }}>
+        <img
+          src={profileImage || ""}
+          alt={data.name}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            borderRadius: "24px"
+          }}
+        />
+      </div>
 
         <div className="space-y-8 text-center lg:text-left">
           <div className="space-y-4">
