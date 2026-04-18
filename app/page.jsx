@@ -20,7 +20,7 @@ export default function HomePage() {
         <div style={{ width: "200", height: 200, overflow: "hidden" }}>
         <img
           src={profileImage || ""}
-          alt={data.name}
+          alt={""}
           style={{
             width: "100%",
             height: "100%",
