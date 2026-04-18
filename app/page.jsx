@@ -14,9 +14,8 @@ export default function HomePage() {
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.15),transparent_30%)]" />
 
-      <section className="relative max-w-6xl mx-auto min-h-screen px-6 py-16 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="relative max-w-6xl mx-auto min-h-screen px-6 py-16 grid lg:grid-cols-2 gap-0 items-center">
         
-
         <div style={{ width: "200", height: 200, overflow: "hidden" }}>
         <img
           src={profileImage || ""}
@@ -25,7 +24,7 @@ export default function HomePage() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            borderRadius: "24px"
+            borderRadius: "25px"
           }}
         />
       </div>
@@ -52,7 +51,7 @@ export default function HomePage() {
                 rel="noreferrer"
                 className="group flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition-all duration-300"
               >
-                <img src={social.img} alt={social.name} className="w-[150px] h-[150px] rounded-[24px]" />
+                <img src={social.img} alt={social.name} className="w-14 h-14 rounded-2xl" />
                 <span>{social.name}</span>
               </a>
             ))}
