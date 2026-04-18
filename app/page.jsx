@@ -11,60 +11,75 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.15),transparent_30%)]" />
+    <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white">
 
-      <section className="relative max-w-6xl mx-auto min-h-screen px-6 py-16 grid lg:grid-cols-2 gap-0 items-center">
-        
-        <div style={{ width: "200", height: 200, overflow: "hidden" }}>
-        <img
-          src={profileImage || ""}
-          alt={""}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            borderRadius: "25px"
-          }}
-        />
-      </div>
+      {/* Background glow */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.15),transparent_30%)]" />
 
+      <section className="max-w-6xl mx-auto min-h-screen px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
+
+        {/* LEFT: Profile Image */}
+        <div className="flex justify-center lg:justify-start">
+          <div className="relative w-48 h-48 lg:w-64 lg:h-64 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
+            
+            {/* subtle glow ring */}
+            <div className="absolute inset-0 rounded-3xl bg-white/5 opacity-0 group-hover:opacity-100 transition duration-500" />
+
+            <img
+              src={profileImage}
+              alt="Profile"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+        </div>
+
+        {/* RIGHT: Content */}
         <div className="space-y-8 text-center lg:text-left">
+
           <div className="space-y-4">
             <p className="text-sm uppercase tracking-[0.35em] text-white/50">
               Android Engineer • Jetpack Compose
             </p>
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
               Building modern mobile experiences that feel alive.
             </h1>
-            <p className="text-lg md:text-xl text-white/70 leading-8 max-w-2xl">
+
+            <p className="text-base md:text-lg text-white/70 leading-7 max-w-xl">
               I design and engineer polished Android applications with clean architecture, premium UI, and real-world impact — from portfolio experiences to innovative commuter platforms like Nganya.
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+          {/* Socials */}
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             {socials.map((social, idx) => (
               <a
                 key={idx}
                 href={social.href}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 transition-all duration-300"
+                className="group flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 backdrop-blur hover:bg-white/10 hover:scale-[1.03] transition-all duration-300"
               >
-                <img src={social.img} alt={social.name} className="w-14 h-14 rounded-2xl" />
-                <span>{social.name}</span>
+                <img
+                  src={social.img}
+                  alt={social.name}
+                  className="w-5 h-5"
+                />
+                <span className="text-sm">{social.name}</span>
               </a>
             ))}
           </div>
 
+          {/* CTA */}
           <div className="pt-4">
             <a
               href="/projects"
-              className="inline-flex px-6 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition-transform"
+              className="inline-flex px-6 py-3 rounded-2xl bg-white text-black font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300"
             >
               View My Work
             </a>
           </div>
+
         </div>
       </section>
     </main>
