@@ -44,11 +44,11 @@ export default function HomePage() {
               Android Engineer • Jetpack Compose
             </p>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
               Building modern mobile experiences that feel{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(34,211,238,0.6)] animate-glow">
                 alive
-              </span>.
+              </span>
             </h1>
 
             <p className="text-base md:text-lg text-white/70 leading-7 max-w-xl">

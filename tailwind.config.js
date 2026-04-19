@@ -7,7 +7,18 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx,mdx}",
   ],
   theme: {
-    extend: {},
-  },
+  extend: {
+    keyframes: {
+      glow: {
+        "0%, 100%": { opacity: 1, transform: "translateY(0px)" },
+        "50%": { opacity: 0.8, transform: "translateY(-2px)" }
+      }
+    },
+    animation: {
+      glow: "glow 2.5s ease-in-out infinite"
+    }
+  }
+},
   plugins: [],
 };
+
