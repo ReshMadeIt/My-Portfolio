@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className="ml-auto flex items-center gap-6 text-[13.5px] text-[#888]">
 
           <a
-            href="https://play.google.com/apps/internaltest/4701223804579468060"
+            href="https://play.google.com/apps/testing/com.nganya.mobile"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center px-[1px] py-[1px] rounded-lg group"
@@ -81,43 +81,47 @@ export default function Navbar() {
           )}
 
           {pathname !== "/subscribe" && (
-  <div className="relative group">
+            <div className="relative group">
 
-    {/* Main link */}
-    <Link
-      href="/subscribe"
-      className="hover:text-[#ededed] transition-colors"
-    >
-      Subscribe
-    </Link>
+              {/* Main link */}
+              <Link
+                href="/subscribe"
+                className="hover:text-[#ededed] transition-colors"
+              >
+                Subscribe
+              </Link>
 
-    {/* Dropdown */}
-    <div className="absolute right-0 mt-3 w-64 bg-[#0a0a0a] border border-[#1a1a1a] rounded-xl p-3 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              {/* Dropdown */}
+              <div className="absolute right-0 mt-3 w-64 bg-[#0a0a0a] border border-[#1a1a1a] rounded-xl p-3 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 
-      <a
-        href="/subscribe?type=updates"
-        className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
-      >
-        📦 Product Updates
-      </a>
+                <a
+                  href="/subscribe?type=updates"
+                  className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
+                >
+                  📦 Product Updates
+                </a>
 
-      <a
-        href="/subscribe?type=beta"
-        className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
-      >
-        🚀 Beta Testing
-      </a>
+                <a
+                  href="/subscribe?type=beta"
+                  className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
+                >
+                  🚀 Beta Testing
+                </a>
 
-      <a
-        href="/subscribe?type=newsletter"
-        className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
-      >
-        🧠 Newsletter
-      </a>
+                <a
+                  href="/subscribe?type=newsletter"
+                  className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
+                >
+                  🧠 Newsletter
+                </a>
 
-    </div>
-  </div>
-)}
+              </div>
+            </div>
+          )}
+
+          <Link href="/sponsor" className="hover:text-[#ededed]">
+            Sponsor
+          </Link>
 
         </div>
       </div>

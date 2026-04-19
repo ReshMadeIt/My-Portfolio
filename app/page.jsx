@@ -23,16 +23,25 @@ export default function HomePage() {
 
         {/* LEFT: Profile Image */}
         <div className="flex justify-center lg:justify-start">
-          <div className="relative w-48 h-48 lg:w-64 lg:h-64 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
 
-            {/* subtle glow ring */}
+            {/* glow ring */}
             <div className="absolute inset-0 rounded-3xl bg-white/5 opacity-0 group-hover:opacity-100 transition duration-500" />
 
+            {/* image */}
             <img
               src={profileImage}
               alt="Profile"
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
+
+            {/* AGE OVERLAY */}
+            <div className="absolute inset-0 flex items-end justify-center opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+              <div className="mb-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-xs text-white">
+                22 years old
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -46,9 +55,10 @@ export default function HomePage() {
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
               Building modern mobile experiences that feel{" "}
-              <span className="bg-gradient-to-r from-orange-300 via-amber-400 to-red-500 bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(251,146,60,0.6)] animate-pulse">
+              <span className="bg-[length:200%_100%] bg-gradient-to-r from-orange-300 via-red-500 via-amber-400 to-orange-300 bg-clip-text text-transparent animate-text-shimmer drop-shadow-[0_0_25px_rgba(251,146,60,0.5)]">
                 alive
-              </span>{" "}
+              </span>
+              {" "}
               <span className="text-[#FF5700]">.</span>
             </h1>
 
@@ -117,6 +127,41 @@ export default function HomePage() {
 
         </div>
       </section>
+      <section className="py-20 text-white">
+  <div className="max-w-3xl mx-auto px-6 text-center">
+
+    <h2 className="text-3xl font-semibold mb-4">
+      Sponsor My Work
+    </h2>
+
+    <p className="text-[#888] mb-8">
+      I build modern Android apps and developer-focused tools.
+      Reach an audience of builders, students, and early adopters.
+    </p>
+
+    <div className="grid gap-4 text-left mb-8">
+      <div className="border border-[#1a1a1a] p-4 rounded-xl bg-[#0a0a0a]">
+        📱 App exposure in beta & production apps
+      </div>
+
+      <div className="border border-[#1a1a1a] p-4 rounded-xl bg-[#0a0a0a]">
+        📧 Email newsletter mentions
+      </div>
+
+      <div className="border border-[#1a1a1a] p-4 rounded-xl bg-[#0a0a0a]">
+        🌐 Website placement & banners
+      </div>
+    </div>
+
+    <a
+      href="/sponsor"
+      className="inline-flex px-6 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white"
+    >
+      Become a Sponsor
+    </a>
+
+  </div>
+</section>
     </main>
   );
 }

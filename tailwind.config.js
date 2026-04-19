@@ -8,18 +8,22 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx,mdx}",
   ],
   theme: {
-  extend: {
-    keyframes: {
-      glow: {
-        "0%, 100%": { opacity: 1, transform: "translateY(0px)" },
-        "50%": { opacity: 0.8, transform: "translateY(-2px)" }
+    extend: {
+      animation: {
+        "text-shimmer": "text-shimmer 2.5s linear infinite",
+      },
+      keyframes: {
+        "text-shimmer": {
+          "0%": {
+            backgroundPosition: "0% 50%",
+          },
+          "100%": {
+            backgroundPosition: "200% 50%",
+          },
+        },
       }
-    },
-    animation: {
-      glow: "glow 2.5s ease-in-out infinite"
     }
-  }
-},
+  },
   plugins: [],
 };
 
