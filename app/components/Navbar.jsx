@@ -6,7 +6,7 @@ export default function Navbar() {
           <a href="/" className="text-[15px] font-semibold tracking-tight text-[#f5f5f5]">
             Reshley Atsiaya
           </a>
-          <span className="mt-1 text-[12px] text-[#888]">Android Engineer</span>
+          <span className="mt-1 text-[12px] text-[#888]">Android Engineer | Kotlin Developer</span>
         </div>
 
         <div className="ml-auto flex items-center gap-6 text-[13.5px] text-[#888]">
