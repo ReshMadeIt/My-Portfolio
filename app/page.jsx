@@ -72,7 +72,7 @@ export default function HomePage() {
                   alt={social.name}
                   className="w-5 h-5"
                 />
-                
+
                 <span className="text-sm">{social.name}</span>
               </a>
             ))}
@@ -86,6 +86,33 @@ export default function HomePage() {
             >
               View My Work
             </a>
+          </div>
+
+        </div>
+      </section>
+      <section className="py-20 text-white">
+        <div className="max-w-3xl mx-auto px-6">
+
+          <h2 className="text-3xl font-semibold mb-6">
+            Lessons beyond code
+          </h2>
+
+          <div className="border border-[#1a1a1a] bg-[#0a0a0a] rounded-xl p-6 space-y-4">
+
+            <p className="text-[#f5f5f5] leading-relaxed">
+              I learned that emotions, like systems, need structure.
+              Without clarity, even the strongest connections break under pressure.
+            </p>
+
+            <p className="text-[#888] leading-relaxed">
+              It taught me discipline, patience, and the importance of building
+              things—whether relationships or software—with intention, not impulse.
+            </p>
+
+            <span className="text-xs text-orange-400 block">
+              #growth #mindset
+            </span>
+
           </div>
 
         </div>

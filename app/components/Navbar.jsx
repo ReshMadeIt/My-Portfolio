@@ -74,29 +74,55 @@ export default function Navbar() {
             </span>
           </a>
 
-          {pathname !== "/" && (
-            <Link href="/" className="hover:text-[#ededed]">
-              Home
-            </Link>
-          )}
-
           {pathname !== "/projects" && (
             <Link href="/projects" className="hover:text-[#ededed]">
               Projects
             </Link>
           )}
 
-          <a
-            href="mailto:reshmadeit@gmail.com"
-            className="hover:text-[#ededed]"
-          >
-            Contact
-          </a>
+          {pathname !== "/subscribe" && (
+  <div className="relative group">
+
+    {/* Main link */}
+    <Link
+      href="/subscribe"
+      className="hover:text-[#ededed] transition-colors"
+    >
+      Subscribe
+    </Link>
+
+    {/* Dropdown */}
+    <div className="absolute right-0 mt-3 w-64 bg-[#0a0a0a] border border-[#1a1a1a] rounded-xl p-3 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+
+      <a
+        href="/subscribe?type=updates"
+        className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
+      >
+        📦 Product Updates
+      </a>
+
+      <a
+        href="/subscribe?type=beta"
+        className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
+      >
+        🚀 Beta Testing
+      </a>
+
+      <a
+        href="/subscribe?type=newsletter"
+        className="block px-3 py-2 text-sm text-[#ccc] hover:text-white hover:bg-[#111] rounded-lg"
+      >
+        🧠 Newsletter
+      </a>
+
+    </div>
+  </div>
+)}
 
         </div>
       </div>
       {/* Gradient bottom border */}
       {/* <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-r from-orange-500/20 via-red-500/20 to-orange-500/20 blur-xl" /> */}
-    </nav>
+    </nav >
   );
 }
