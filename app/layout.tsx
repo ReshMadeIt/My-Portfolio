@@ -5,6 +5,9 @@ import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Reshley Atsaiya - Portfolio",
+  icons: {
+    icon: "icons/science.png",
+  },
   description: "Android developer building modern mobile experiences",
   openGraph: {
     title: "Reshley Atsiaya",

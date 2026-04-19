@@ -45,12 +45,12 @@ export default function HomePage() {
             </p>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-  Building modern mobile experiences that feel{" "}
-  <span className="bg-gradient-to-r from-orange-300 via-amber-400 to-red-500 bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(251,146,60,0.6)] animate-pulse">
-  alive
-</span>{" "}
-  <span className="text-[#FF5700]">.</span>
-</h1>
+              Building modern mobile experiences that feel{" "}
+              <span className="bg-gradient-to-r from-orange-300 via-amber-400 to-red-500 bg-clip-text text-transparent drop-shadow-[0_0_14px_rgba(251,146,60,0.6)] animate-pulse">
+                alive
+              </span>{" "}
+              <span className="text-[#FF5700]">.</span>
+            </h1>
 
             <p className="text-base md:text-lg text-white/70 leading-7 max-w-xl">
               I design and engineer polished Android applications with clean architecture, premium UI, and real-world impact — from portfolio experiences to innovative commuter platforms like Nganya.
@@ -72,6 +72,7 @@ export default function HomePage() {
                   alt={social.name}
                   className="w-5 h-5"
                 />
+                
                 <span className="text-sm">{social.name}</span>
               </a>
             ))}
