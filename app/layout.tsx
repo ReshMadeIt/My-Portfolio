@@ -4,8 +4,23 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: 'ReshMadeIt | Android Developer',
-  description: 'Android developer building modern Compose apps.',
+  title: "Reshley Atsaiya - Portfolio",
+  description: "Android developer building modern mobile experiences",
+  openGraph: {
+    title: "Reshley Atsaiya",
+    description: "Android developer portfolio",
+    url: "https://reshleyatsiaya.vercel.app/",
+    siteName: "ReshMadeIt Portfolio",
+    images: [
+      {
+        url: "https://reshleyatsiaya.vercel.app/og-image.",
+        width: 1200,
+        height: 630,
+        alt: "Reshley Portfolio Preview",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({ 
