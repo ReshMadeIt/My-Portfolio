@@ -1,4 +1,5 @@
 import './globals.css'
+import { Analytics } from '@vercel/analytics/next';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Navbar/>
         <div className="flex-1">{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
