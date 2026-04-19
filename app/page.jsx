@@ -1,7 +1,7 @@
 "use client";
 
 export default function HomePage() {
-  const profileImage = "/profile.jpg";
+  const profileImage = "/reshmadeit.jpg";
 
   const socials = [
     { name: "GitHub", href: "https://github.com/ReshMadeIt", img: "/icons/github.png" },

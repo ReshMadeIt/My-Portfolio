@@ -13,9 +13,9 @@ export const metadata = {
     siteName: "ReshMadeIt Portfolio",
     images: [
       {
-        url: "https://reshleyatsiaya.vercel.app/og-image.",
-        width: 1200,
-        height: 630,
+        url: "/reshmadeit.png",
+        width: 1080,
+        height: 1080,
         alt: "Reshley Portfolio Preview",
       },
     ],
