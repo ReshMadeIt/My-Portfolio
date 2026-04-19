@@ -8,7 +8,10 @@ export default function HomePage() {
     { name: "LinkedIn", href: "https://www.linkedin.com/in/reshley-atsiaya", img: "/icons/linkedin.png" },
     { name: "X", href: "https://x.com/lil_mpesa", img: "/icons/x.png" },
     { name: "Email", href: "mailto:reshmadeit@gmail.com", img: "/icons/email.png" },
+    { name: "Play Store", href: "https://play.google.com/store/apps/dev?id=8041553351271004681", img: "/icons/play.png" },
   ];
+
+
 
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white">
@@ -21,7 +24,7 @@ export default function HomePage() {
         {/* LEFT: Profile Image */}
         <div className="flex justify-center lg:justify-start">
           <div className="relative w-48 h-48 lg:w-64 lg:h-64 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
-            
+
             {/* subtle glow ring */}
             <div className="absolute inset-0 rounded-3xl bg-white/5 opacity-0 group-hover:opacity-100 transition duration-500" />
 
@@ -42,7 +45,10 @@ export default function HomePage() {
             </p>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Building modern mobile experiences that feel alive.
+              Building modern mobile experiences that feel{" "}
+              <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                alive
+              </span>.
             </h1>
 
             <p className="text-base md:text-lg text-white/70 leading-7 max-w-xl">

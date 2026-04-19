@@ -1,3 +1,5 @@
+import RenderDebug from "../components/RenderDebug";
+
 const projects = [
   {
     title: "Nganya Mobile",
@@ -13,7 +15,8 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-20">
+    <main data-render-page="projects-page" className="max-w-6xl mx-auto px-6 py-20">
+      <RenderDebug label="app/projects/page.jsxxx" />
       <h1 className="text-5xl font-bold mb-12">Projects</h1>
 
       <div className="grid md:grid-cols-2 gap-8">

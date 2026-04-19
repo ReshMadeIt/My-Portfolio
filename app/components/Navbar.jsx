@@ -1,4 +1,5 @@
 export default function Navbar() {
+  console.log("Navbar rendered");
   return (
     <nav className="sticky top-0 z-50 border-b border-[#1a1a1a] bg-[#0a0a0a]/95 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-6 px-5">
