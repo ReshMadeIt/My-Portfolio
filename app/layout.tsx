@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Reshley Atsaiya - Portfolio",
+  title: "Reshley Atsiaya - Portfolio",
   icons: {
     icon: "icons/science.png",
   },
