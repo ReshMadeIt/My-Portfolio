@@ -17,10 +17,9 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white">
-
+<main className="relative min-h-screen bg-white text-black dark:bg-black dark:text-white">
 {/* Pure black background */}
-<div className="pointer-events-none absolute inset-0 -z-10 bg-black" />
+<div className="pointer-events-none absolute inset-0 -z-10 bg-white dark:bg-black" />
       <section className="max-w-6xl mx-auto min-h-screen px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
 
         {/* LEFT: Profile Image */}
