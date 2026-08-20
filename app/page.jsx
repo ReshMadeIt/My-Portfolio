@@ -135,16 +135,21 @@ export default function HomePage() {
         {/* Card 1 */}
         <div className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-[#1c1c1c] bg-[#0d0d0d] transition-all duration-300 hover:-translate-y-1 hover:border-[#2a2a2a] sm:w-[320px]">
           <div className="relative h-48 overflow-hidden bg-gradient-to-br from-orange-500/20 via-red-500/10 to-transparent">
-            <div className="absolute inset-0 flex items-center justify-center">
-  <div className="group rounded-2xl border border-white/10 bg-black/50 p-2 shadow-2xl backdrop-blur-md">
+<div className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-[#1c1c1c] bg-[#0d0d0d] transition-all duration-300 hover:-translate-y-1 hover:border-[#2a2a2a] sm:w-[320px]">
+
+  <div className="relative h-48 overflow-hidden bg-black">
     <Image
-      src="/nganya.png"
+      src="/resh.png"
       alt="Nganya Mobile"
-      width={220}
-      height={220}
-      className="h-36 w-36 rounded-xl object-cover transition-transform duration-500 group-hover:scale-105"
+      fill
+      sizes="(max-width: 640px) 280px, 320px"
+      className="object-cover transition-transform duration-500 group-hover:scale-105"
     />
+
+    {/* Optional dark overlay */}
+    <div className="absolute inset-0 bg-black/20" />
   </div>
+
 </div>
 
             <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[11px] text-[#bbb] backdrop-blur">
