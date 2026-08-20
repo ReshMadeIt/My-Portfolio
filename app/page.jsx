@@ -134,13 +134,19 @@ export default function HomePage() {
         <div className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-[#1c1c1c] bg-[#0d0d0d] transition-all duration-300 hover:-translate-y-1 hover:border-[#2a2a2a] sm:w-[320px]">
           <div className="relative h-48 overflow-hidden bg-gradient-to-br from-orange-500/20 via-red-500/10 to-transparent">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="rounded-2xl border border-white/10 bg-black/40 px-8 py-6 text-center backdrop-blur">
-                <span className="text-3xl">🚌</span>
-                <p className="mt-2 text-sm font-medium text-white">
-                  Nganya
-                </p>
-              </div>
-            </div>
+             <div className="rounded-2xl border border-white/10 bg-black/40 p-3 backdrop-blur">
+  <Image
+    src="/resh.png"
+    alt="Nganya Mobile"
+    width={180}
+    height={180}
+    className="h-32 w-32 rounded-xl object-cover"
+  />
+
+  <p className="mt-3 text-sm font-medium text-white">
+    Nganya
+  </p>
+</div>
 
             <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[11px] text-[#bbb] backdrop-blur">
               Android
