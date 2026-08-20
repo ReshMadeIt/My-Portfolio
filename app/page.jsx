@@ -129,7 +129,7 @@ export default function HomePage() {
     </div>
 
     {/* Swipe row */}
-    <div className="-mx-5 overflow-x-auto px-5 pb-4 scrollbar-hide">
+   <div className="-mx-5 overflow-x-auto px-5 pb-4 hide-scrollbar">
       <div className="flex w-max gap-4">
 
         {/* Card 1 */}
