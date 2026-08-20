@@ -24,48 +24,29 @@ export default function HomePage() {
 
       <section className="max-w-6xl mx-auto min-h-screen px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
 
-     {/* LEFT: Profile Image */}
-<div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
-  <svg
-    className="absolute inset-0 w-full h-full"
-    viewBox="0 0 100 100"
-  >
-    <defs>
-      <clipPath id="roundedStar" clipPathUnits="userSpaceOnUse">
-        <path
-          d="
-            M50 5
-            C52 5 53 7 54 10
-            L62 31
-            L85 32
-            C89 32 91 37 87 40
-            L69 54
-            L75 77
-            C76 81 72 84 69 82
-            L50 69
-            L31 82
-            C28 84 24 81 25 77
-            L31 54
-            L13 40
-            C9 37 11 32 15 32
-            L38 31
-            L46 10
-            C47 7 48 5 50 5
-            Z
-          "
-        />
-      </clipPath>
-    </defs>
+        {/* LEFT: Profile Image */}
+        <div className="flex justify-center lg:justify-start">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
 
-    <image
-      href={profileImage}
-      width="100"
-      height="100"
-      preserveAspectRatio="xMidYMid slice"
-      clipPath="url(#roundedStar)"
-    />
-  </svg>
-</div>
+            {/* glow ring */}
+            <div className="absolute inset-0 rounded-3xl bg-white/5 opacity-0 group-hover:opacity-100 transition duration-500" />
+
+            {/* image */}
+            <img
+              src={profileImage}
+              alt="Profile"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+
+            {/* AGE OVERLAY */}
+            <div className="absolute inset-0 flex items-end justify-center opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+              <div className="mb-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-xs text-white">
+                23 years old
+              </div>
+            </div>
+
+          </div>
+        </div>
 
         {/* RIGHT: Content */}
         <div className="space-y-8 text-center lg:text-left">
