@@ -139,7 +139,7 @@ export default function HomePage() {
 
   <div className="relative h-48 overflow-hidden bg-black">
     <Image
-      src="/resh.png"
+      src="/nganya.png"
       alt="Nganya Mobile"
       fill
       sizes="(max-width: 640px) 280px, 320px"
