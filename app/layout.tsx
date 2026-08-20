@@ -10,7 +10,7 @@ export const metadata = {
   },
   description: "Android developer building modern mobile experiences",
   openGraph: {
-    title: "Reshley Atsiaya",
+    title: "ReshMadeIt",
     description: "Android developer portfolio",
     url: "https://reshmadeit.vercel.app/",
     siteName: "ReshMadeIt Portfolio",
@@ -19,7 +19,7 @@ export const metadata = {
         url: "/resh.png",
         width: 1080,
         height: 1080,
-        alt: "Reshley Portfolio",
+        alt: "ReshMadeIt Portfolio",
       },
     ],
     type: "website",
