@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="space-y-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#f5f5f5]">
-              Reshley Atsiaya
+              ReshMadeit
             </p>
 
             <p className="mt-2 max-w-md text-sm leading-6 text-[#8a8a8a]">
@@ -44,14 +44,14 @@ export default function Footer() {
             <a href="https://github.com/ReshMadeIt" target="_blank" className="hover:text-[#f5f5f5] transition-colors">
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/reshley-atsiaya" target="_blank" className="hover:text-[#f5f5f5] transition-colors">
+            <a href="https://www.linkedin.com/in/reshmadeit" target="_blank" className="hover:text-[#f5f5f5] transition-colors">
               LinkedIn
             </a>
           </div>
 
           {/* Copyright */}
           <p className="text-xs text-[#666]">
-            &copy; {year} Reshley Atsiaya. All rights reserved.
+            &copy; {year} ReshMadeIt. All rights reserved.
           </p>
         </div>
 

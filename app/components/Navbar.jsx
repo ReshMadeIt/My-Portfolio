@@ -14,7 +14,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="/icons/science.png"
+                src="/resh.png"
                 alt="Logo"
                 width={48}
                 height={48}
@@ -25,7 +25,7 @@ export default function Navbar() {
               <div className="flex flex-col leading-none">
                 <div className="flex items-center gap-2">
                   <span className="text-[24px] font-semibold tracking-tight text-[#f5f5f5]">
-                    Reshley Atsiaya
+                    ReshMadeIt
                   </span>
 
                   {/* status dot */}
@@ -60,7 +60,7 @@ export default function Navbar() {
           </a>
 
           <a
-            href="https://wa.me/254759183060?text=Hi%20Reshley%2C%20I%20want%20to%20inquire%20about%20your%20Android%20development%20services"
+            href="https://discord.gg/3ep8MXach"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center px-[1px] py-[1px] rounded-lg group"
@@ -70,7 +70,7 @@ export default function Navbar() {
 
             {/* button body */}
             <span className="relative flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-[#0a0a0a] rounded-lg transition-all duration-300 group-hover:scale-105">
-              WhatsApp
+              Discord
             </span>
           </a>
 
