@@ -6,17 +6,17 @@ import Footer from "./components/Footer";
 export const metadata = {
   title: "ReshMadeIt - Portfolio",
   icons: {
-    icon: "icons/science.png",
+    icon: "/resh.png",
   },
   description: "Android developer building modern mobile experiences",
   openGraph: {
     title: "Reshley Atsiaya",
     description: "Android developer portfolio",
-    url: "https://reshleyatsiaya.vercel.app/",
+    url: "https://reshmadeit.vercel.app/",
     siteName: "ReshMadeIt Portfolio",
     images: [
       {
-        url: "/reshmadeit.png",
+        url: "/resh.png",
         width: 1080,
         height: 1080,
         alt: "Reshley Portfolio",
