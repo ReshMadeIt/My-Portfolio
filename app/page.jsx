@@ -20,7 +20,7 @@ export default function HomePage() {
     <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white">
 
       {/* Background glow */}
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.15),transparent_30%)]" />
+<div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.06),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.06),transparent_40%)]" />
 
       <section className="max-w-6xl mx-auto min-h-screen px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
 
