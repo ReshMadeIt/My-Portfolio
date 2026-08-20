@@ -171,6 +171,19 @@ export default function Navbar() {
       >
         <div className="space-y-2 px-4 py-4">
 
+          {/* Contract */}
+          <a
+            href="https://play.google.com/apps/testing/com.nganya.mobile"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+            className="block rounded-xl bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 p-[1px]"
+          >
+            <span className="block rounded-[11px] bg-[#0a0a0a] px-4 py-3 text-sm font-medium text-white">
+              Hire me 🚀
+            </span>
+          </a>
+
           {/* Join Testing */}
           <a
             href="https://play.google.com/apps/testing/com.nganya.mobile"
