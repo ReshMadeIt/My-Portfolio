@@ -9,9 +9,12 @@ export default function HomePage() {
     { name: "X", href: "https://x.com/reshmadeit", img: "/icons/x.png" },
     { name: "Email", href: "mailto:reshmadeit@gmail.com", img: "/icons/email.png" },
     { name: "Play Store", href: "https://play.google.com/store/apps/dev?id=8041553351271004681", img: "/icons/play.png" },
+{
+    name: "Discord",
+    href: "https://discord.gg/1539700112161509438",
+    img: "/icons/discord.png"
+},
   ];
-
-
 
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-950 text-white">
