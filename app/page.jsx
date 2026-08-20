@@ -1,12 +1,12 @@
 "use client";
 
 export default function HomePage() {
-  const profileImage = "/resh.jpg";
+  const profileImage = "/resh.png";
 
   const socials = [
     { name: "GitHub", href: "https://github.com/ReshMadeIt", img: "/icons/github.png" },
-    { name: "LinkedIn", href: "https://www.linkedin.com/in/reshley-atsiaya", img: "/icons/linkedin.png" },
-    { name: "X", href: "https://x.com/lil_mpesa", img: "/icons/x.png" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/reshmadeit", img: "/icons/linkedin.png" },
+    { name: "X", href: "https://x.com/reshmadeit", img: "/icons/x.png" },
     { name: "Email", href: "mailto:reshmadeit@gmail.com", img: "/icons/email.png" },
     { name: "Play Store", href: "https://play.google.com/store/apps/dev?id=8041553351271004681", img: "/icons/play.png" },
   ];
