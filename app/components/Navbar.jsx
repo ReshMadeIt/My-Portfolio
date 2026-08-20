@@ -180,7 +180,7 @@ export default function Navbar() {
             className="block rounded-xl bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 p-[1px]"
           >
             <span className="block rounded-[11px] bg-[#0a0a0a] px-4 py-3 text-sm font-medium text-white">
-              Hire me 🚀
+              Hire me
             </span>
           </a>
 

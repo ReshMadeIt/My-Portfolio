@@ -103,6 +103,203 @@ export default function HomePage() {
 
         </div>
       </section>
+
+<section className="py-20">
+  <div className="mx-auto max-w-screen-xl px-5">
+
+    {/* Header */}
+    <div className="mb-8 flex items-end justify-between">
+      <div>
+        <p className="mb-2 text-sm font-medium text-orange-500">
+          MY WORK
+        </p>
+
+        <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          Things I&apos;ve built.
+        </h2>
+
+        <p className="mt-2 max-w-xl text-sm text-[#777] sm:text-base">
+          A few projects, experiments and products I&apos;ve been working on.
+        </p>
+      </div>
+
+      <span className="hidden text-xs text-[#555] sm:block">
+        Swipe →
+      </span>
+    </div>
+
+    {/* Swipe row */}
+    <div className="-mx-5 overflow-x-auto px-5 pb-4 scrollbar-hide">
+      <div className="flex w-max gap-4">
+
+        {/* Card 1 */}
+        <div className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-[#1c1c1c] bg-[#0d0d0d] transition-all duration-300 hover:-translate-y-1 hover:border-[#2a2a2a] sm:w-[320px]">
+          <div className="relative h-48 overflow-hidden bg-gradient-to-br from-orange-500/20 via-red-500/10 to-transparent">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="rounded-2xl border border-white/10 bg-black/40 px-8 py-6 text-center backdrop-blur">
+                <span className="text-3xl">🚌</span>
+                <p className="mt-2 text-sm font-medium text-white">
+                  Nganya
+                </p>
+              </div>
+            </div>
+
+            <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[11px] text-[#bbb] backdrop-blur">
+              Android
+            </span>
+          </div>
+
+          <div className="p-5">
+            <h3 className="text-lg font-medium text-white">
+              Nganya Mobile
+            </h3>
+
+            <p className="mt-2 text-sm leading-relaxed text-[#777]">
+              A community-driven Android experience for discovering
+              Kenya&apos;s matatu culture.
+            </p>
+
+            <div className="mt-4 flex gap-2">
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Kotlin
+              </span>
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Compose
+              </span>
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Supabase
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 2 */}
+        <div className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-[#1c1c1c] bg-[#0d0d0d] transition-all duration-300 hover:-translate-y-1 hover:border-[#2a2a2a] sm:w-[320px]">
+          <div className="relative h-48 overflow-hidden bg-gradient-to-br from-blue-500/20 via-purple-500/10 to-transparent">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="rounded-2xl border border-white/10 bg-black/40 px-8 py-6 text-center backdrop-blur">
+                <span className="text-3xl">📱</span>
+                <p className="mt-2 text-sm font-medium text-white">
+                  Project Two
+                </p>
+              </div>
+            </div>
+
+            <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[11px] text-[#bbb] backdrop-blur">
+              Mobile
+            </span>
+          </div>
+
+          <div className="p-5">
+            <h3 className="text-lg font-medium text-white">
+              Dummy Project
+            </h3>
+
+            <p className="mt-2 text-sm leading-relaxed text-[#777]">
+              An experimental mobile product exploring a different
+              approach to everyday interactions.
+            </p>
+
+            <div className="mt-4 flex gap-2">
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Android
+              </span>
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Compose
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 3 */}
+        <div className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-[#1c1c1c] bg-[#0d0d0d] transition-all duration-300 hover:-translate-y-1 hover:border-[#2a2a2a] sm:w-[320px]">
+          <div className="relative h-48 overflow-hidden bg-gradient-to-br from-green-500/20 via-emerald-500/10 to-transparent">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="rounded-2xl border border-white/10 bg-black/40 px-8 py-6 text-center backdrop-blur">
+                <span className="text-3xl">🌐</span>
+                <p className="mt-2 text-sm font-medium text-white">
+                  Project Three
+                </p>
+              </div>
+            </div>
+
+            <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[11px] text-[#bbb] backdrop-blur">
+              Web
+            </span>
+          </div>
+
+          <div className="p-5">
+            <h3 className="text-lg font-medium text-white">
+              Dummy Web App
+            </h3>
+
+            <p className="mt-2 text-sm leading-relaxed text-[#777]">
+              A modern web experiment focused on community, discovery
+              and beautiful interactions.
+            </p>
+
+            <div className="mt-4 flex gap-2">
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Next.js
+              </span>
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Tailwind
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 4 */}
+        <div className="group w-[280px] shrink-0 overflow-hidden rounded-2xl border border-[#1c1c1c] bg-[#0d0d0d] transition-all duration-300 hover:-translate-y-1 hover:border-[#2a2a2a] sm:w-[320px]">
+          <div className="relative h-48 overflow-hidden bg-gradient-to-br from-purple-500/20 via-pink-500/10 to-transparent">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="rounded-2xl border border-white/10 bg-black/40 px-8 py-6 text-center backdrop-blur">
+                <span className="text-3xl">🎧</span>
+                <p className="mt-2 text-sm font-medium text-white">
+                  Project Four
+                </p>
+              </div>
+            </div>
+
+            <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[11px] text-[#bbb] backdrop-blur">
+              Experiment
+            </span>
+          </div>
+
+          <div className="p-5">
+            <h3 className="text-lg font-medium text-white">
+              Creative Experiment
+            </h3>
+
+            <p className="mt-2 text-sm leading-relaxed text-[#777]">
+              A small side project built to experiment with audio,
+              animation and interactive UI.
+            </p>
+
+            <div className="mt-4 flex gap-2">
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Kotlin
+              </span>
+              <span className="rounded-md bg-[#151515] px-2 py-1 text-[11px] text-[#999]">
+                Media3
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {/* Mobile swipe hint */}
+    <div className="mt-2 flex items-center gap-2 text-xs text-[#555] sm:hidden">
+      <span>Swipe to explore</span>
+      <span>→</span>
+    </div>
+
+  </div>
+</section>
+
+
       <section className="py-20 text-white">
         <div className="max-w-3xl mx-auto px-6">
 
