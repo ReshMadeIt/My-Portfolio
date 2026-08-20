@@ -41,7 +41,7 @@ export default function HomePage() {
             {/* AGE OVERLAY */}
             <div className="absolute inset-0 flex items-end justify-center opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
               <div className="mb-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-xs text-white">
-                22 years old
+                23 years old
               </div>
             </div>
 
@@ -53,7 +53,7 @@ export default function HomePage() {
 
           <div className="space-y-4">
             <p className="text-sm uppercase tracking-[0.35em] text-white/50">
-              Android Engineer • Jetpack Compose
+              Android Developer
             </p>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">

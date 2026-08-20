@@ -36,7 +36,7 @@ export default function Navbar() {
                 </div>
 
                 <span className="mt-1 text-[12px] text-[#888]">
-                  Android Engineer | Kotlin Developer
+                  Android Developer
                 </span>
               </div>
             </Link>
