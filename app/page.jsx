@@ -135,7 +135,7 @@ export default function HomePage() {
           <div className="relative h-48 overflow-hidden bg-gradient-to-br from-orange-500/20 via-red-500/10 to-transparent">
             <div className="absolute inset-0 flex items-center justify-center">
              <div className="rounded-2xl border border-white/10 bg-black/40 p-3 backdrop-blur">
-  <Image
+  <img
     src="/resh.png"
     alt="Nganya Mobile"
     width={180}
